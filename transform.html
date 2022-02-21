@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Transform</title>
+    <style>
+        .container,
+        .inner {
+            width: 150px;
+            height: 150px;
+
+        }
+
+        .inner {
+            /* transformation er onk option like =skew(px), rotate(deg), translate(px), scale(nothing)
+            sob gula attribute e abar X-ais and Y-axis er moddheo alada alada kore sorano jay just element er last e capital e 'X' or 'Y' diye single value dite hoy  */
+            background-color: lightblue;
+            transform: scale(0.5) rotate(45deg) translate(10px, 20px) skew(20deg, 20deg);
+            /*  translate muloto sorano hoy x axis o y-axis e ar scale diye scale up kora hoy ar rotate diye ghurano hoy  */
+        }
+
+        .container {
+            border: 2px solid coral;
+            margin: 2px;
+            background-color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>transform css below:</h1>
+    <ul>
+        <li>transform: none;</li>
+        <li>transform: scale(X,Y);</li>
+        <li>transform: scale(parcentage);</li>
+        <li>transform: scaleX(parcentage);</li>
+        <li>transform: scaleY(parcentage);</li>
+        <li>transform: skew(x-deg,y-deg);</li>
+        <li>transform: skewX(X-deg);</li>
+        <li>transform: skewY(y-deg);</li>
+        <li>transform: translate(X-px,Y-px);</li>
+        <li>transform: rotate(deg);</li>
+        <li>transform: rotateX(deg);</li>
+        <li>transform: rotateY(deg);</li>
+    </ul>
+    <br><br>
+    <hr>
+    <div class="container">
+        <div class="inner">Box-1</div>
+    </div>
+    <div class="container">
+        <div class="inner">Box-2</div>
+    </div>
+    <div class="container">
+        <div class="inner">Box-3</div>
+    </div>
+</body>
+
+</html>

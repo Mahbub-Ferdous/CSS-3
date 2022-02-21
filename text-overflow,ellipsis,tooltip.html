@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text overflow</title>
+    <style>
+        .white-space {
+            width: 100px;
+            border: 3px solid red;
+            white-space: nowrap;
+            /* white-space nowrap means lekha gula line by line box wrap hoye bosbe na */
+            overflow: hidden;
+        }
+
+        .text-overflow {
+            text-overflow: ellipsis;
+            /* text-overflow ellipsis means box e lekha .... kore dekhabe */
+            overflow: hidden;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="white-space">
+        <!-- ekane tittle tooltip attribute hisebe kaj korbe mouse oi likhar upor nile tittle e lekha bpr ta dekhabe  -->
+        <p class="text-overflow" title="If you want to get money, sent me bkash please">If you want to get money, sent
+            me bkash please</p>
+    </div>
+</body>
+
+</html>

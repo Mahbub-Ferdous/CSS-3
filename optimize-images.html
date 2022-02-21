@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>importance of optimize images</title>
+    <style>
+        .big-kb {
+            width: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Actually amra onk type images use kori like = jpeg,png,svg,webp etc but images size beshi hole seta end user er jonno service oriented na cause tar loading time and mb beshi khoroch hoy eta economi na so images types k optimize kore nite hoy by using "photopea" or "tinypng.com" 
+    -->
+    <!-- sob cheye kom mb neya image name holo svg which is correction supported, maximum 1kb or 2kb or 3kb hoye thake-->
+    <div>
+        <h1>Images optimize-High Resulation File:</h1><br>
+        <!-- this image is 4.5 mb size which is very bad for end user -->
+        <img class="big-kb" src="showOff/holiday.jpg" alt="">
+    </div>
+    <br>
+    <hr>
+    <div>
+        <h1>Images optimize-Mid Resulation File:</h1><br>
+        <!-- this image is little big low size like 500kb -->
+        <img class="mid-kb" src="showOff/holiday-mid.png" alt="">
+    </div>
+    <br>
+    <hr>
+    <div>
+        <h1>Images optimize-Low Resulation File:</h1><br>
+        <!-- this image is only 102kb very low size -->
+        <img class="low-kb" src="showOff/holiday-low(102kb).png" alt="">
+    </div><br>
+    <hr>
+    <div>
+        <h1>Svg Correction:</h1><br>
+        <img src="showOff/ring.svg" alt="" class="big-kb">
+        <!-- svg coding kore kora so etar size sob cheye choto hoy and eta editor theke click kore correction kora jay -->
+    </div>
+</body>
+
+</html>
