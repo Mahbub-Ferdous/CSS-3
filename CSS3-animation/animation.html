@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation With html ans css</title>
+    <style>
+        /* @keyframes sliding { 
+            from {
+                background-color: red;
+            }
+
+            to {
+                background-color: blue;
+            }
+        } */
+
+
+        @keyframes sliding {
+            0% {
+                background-color: red;
+                left: 0;
+                top: 0;
+            }
+
+            25% {
+                background-color: yellow;
+                left: 100px;
+                top: 410px;
+                transform: scale(0.75);
+
+
+            }
+
+            50% {
+                background-color: blue;
+                left: 200px;
+                top: 0;
+                transform: scale(1);
+            }
+
+            75% {
+                background-color: orangered;
+                left: 300px;
+                top: 420px;
+                transform: scale(0.50);
+            }
+
+            100% {
+                background-color: black;
+                left: 400px;
+                top: 0;
+                transform: scale(1);
+            }
+        }
+
+        .stage {
+            width: 500px;
+            height: 500px;
+            background-color: lightseagreen;
+        }
+
+        .ball {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border-radius: 50px;
+            animation: sliding 5s ease-in-out 0.5s infinite alternate;
+            animation-play-state: running;
+            position: relative;
+            /* amra animation parcentage wise change korte chaile position always relative korte hbe */
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Lets Explore Animation In css</h1>
+    </header>
+    <div class="stage">
+        <div class="ball"></div>
+    </div>
+</body>
+
+</html>
